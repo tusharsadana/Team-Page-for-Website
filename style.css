@@ -1,0 +1,258 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+div.team-header {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    background-attachment: fixed;
+  
+    padding-bottom: 100px;
+    box-sizing: border-box;
+    
+    border-bottom: 4px solid rgba(210, 9, 86, 0.25);
+}
+h1.team-title {
+    font-weight: 300;
+    color: #FFF;
+    font-size: 50px;
+    margin:5%;
+}
+div.team {
+    display: flex;
+    flex-direction: column;
+    margin: -80px 100px 80px 100px;
+    display: none;
+}
+h3.team-name {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+}
+div.committee {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 15%;
+}
+h4.committee-name {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 400;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+    color: #880241;
+}
+div.person {
+    padding: 20px;
+    position: relative;
+    color: #444;
+    width: 250px;
+    transition: all 0.25s;
+}
+div.person div.photo {
+    content: "";
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0px auto;
+    padding: 0px;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.25s;
+    position: relative;
+    z-index: 10;
+}
+div.person div.details {
+    line-height: 1;
+    text-align: center;
+    transition: all 0.25s;
+}
+p.name {
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    font-weight: bolder;
+}
+div.details p.other-detail {
+    font-size: 18px;
+    font-weight: bold;
+}
+.nice-select {
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    border: solid 3px  #88003F;
+    box-sizing: border-box;
+    clear: both;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: normal;
+    height: 42px;
+    line-height: 40px;
+    outline: none;
+    padding-left: 18px;
+    padding-right: 30px;
+    position: relative;
+    color: #880241;
+    text-align: left!important;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    width: auto;
+    margin:2%;
+}
+.nice-select:hover {
+    border-color: #880241;
+}
+.nice-select:active,
+.nice-select.open,
+.nice-select:focus {
+    border-color: #880241;
+}
+.nice-select:after {
+    border-bottom: 2px solid #880241;
+    border-right: 2px solid #880241;
+    content: '';
+    display: block;
+    height: 5px;
+    margin-top: -4px;
+    pointer-events: none;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    -webkit-transform-origin: 66% 66%;
+    -ms-transform-origin: 66% 66%;
+    transform-origin: 66% 66%;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    width: 5px;
+}
+.nice-select.open:after {
+    -webkit-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+.nice-select.open .list {
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transform: scale(1) translateY(0);
+    -ms-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+}
+.nice-select.disabled {
+    border-color: #ededed;
+    color: #999;
+    pointer-events: none;
+}
+.nice-select.disabled:after {
+    border-color: #cccccc;
+}
+.nice-select.wide {
+    width: 100%;
+}
+.nice-select.wide .list {
+    left: 0!important;
+    right: 0!important;
+}
+.nice-select.right {
+    float: right;
+}
+.nice-select.right .list {
+    left: auto;
+    right: 0;
+}
+.nice-select.small {
+    font-size: 12px;
+    height: 36px;
+    line-height: 34px;
+}
+.nice-select.small:after {
+    height: 4px;
+    width: 4px;
+}
+.nice-select.small .option {
+    line-height: 34px;
+    min-height: 34px;
+}
+.nice-select .list {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
+    box-sizing: border-box;
+    margin-top: 4px;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    -webkit-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transform: scale(0.75) translateY(-21px);
+    -ms-transform: scale(0.75) translateY(-21px);
+    transform: scale(0.75) translateY(-21px);
+    -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+    transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+    z-index: 9;
+}
+.nice-select .list:hover .option:not(:hover) {
+    background-color: transparent!important;
+}
+.nice-select .option {
+    cursor: pointer;
+    font-weight: 400;
+    line-height: 40px;
+    list-style: none;
+    min-height: 40px;
+    outline: none;
+    padding-left: 18px;
+    padding-right: 29px;
+    text-align: left;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.nice-select .option:hover,
+.nice-select .option.focus,
+.nice-select .option.selected.focus {
+    background-color: #f6f6f6;
+}
+.nice-select .option.selected {
+    font-weight: bold;
+}
+.nice-select .option.disabled {
+    background-color: transparent;
+    color: #999;
+    cursor: default;
+}
+.no-csspointerevents .nice-select .list {
+    display: none;
+}
+.no-csspointerevents .nice-select.open .list {
+    display: block;
+}
+select.nice-select option {}
